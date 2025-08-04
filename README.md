@@ -116,6 +116,11 @@ The query reveals the number of airlines operating in each region, including the
 
 
 
+
+### Thoughts of handling question
+
+Airlines without ask; which is the most primary metric to capture efficiency and also without loadfactor are exxcluded from the analysis.Also,airlines with no ask but with a loadfactor were considered with the idea that the ask value are not just provided. The analysis was very chronological- it puts the efficiency metric before moving to profit because it matters.
+
 ```sql
 
  -- Airline Efficiency_metrics
@@ -124,7 +129,7 @@ WITH
 air_efficiency
 AS(SELECT region,
 	   AVG(load_factor)*100 AS avg_loadfactor,
-	   AVG(passenger_yield)*100 AS avg_passenger_yield
+	   AVG(passenger_yield) AS avg_passenger_yield
 FROM AirlineData
 WHERE airline_status = 'operated'
 GROUP BY  region
@@ -149,3 +154,9 @@ FROM ranking
 WHERE rank <=3
 
 ```
+
+### Query output
+
+The query reveals that North,Latin America and Europe in tthese metrics respectfully - eventhough Africa has the highest passenger yield of 0.11 the falls way lower in loadfactor.
+
+<img width="449" height="123" alt="most efficient and profitable regions" src="https://github.com/user-attachments/assets/4627599c-3353-40d4-b000-54fc8878c15c" />
