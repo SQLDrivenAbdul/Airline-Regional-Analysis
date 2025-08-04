@@ -103,4 +103,4 @@ For reuseability of the features i engineered in the dataset, i created a view t
   FROM AirlineData
   GROUP BY ROLLUP(region)
 ```
-![image alt](https://github.com/SQLDrivenAbdul/Airline-Regional-Analysis/raw/8abfcdc360fcd6704199d1137915141878d22c36/ailine_eda.PNG)
+![image alt](ailine_eda.PNG)
