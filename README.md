@@ -10,7 +10,8 @@ This analysis project explored and revealed regions that has the high performing
 Airline_Data: The dataset for this project is an "airline_data.csv" file that contains 14 fields and 100 records of airlines across 6 regions.
 
 
-##  Airline_Data – Data Dictionary
+
+## Airline_Data Dictionary
 
 | Column Name            | Description                                                                 |
 |------------------------|-----------------------------------------------------------------------------|
@@ -103,4 +104,5 @@ For reuseability of the features i engineered in the dataset, i created a view t
   FROM AirlineData
   GROUP BY ROLLUP(region)
 ```
-![image alt](ailine_eda.PNG)
+
+<img width="420" height="170" alt="eda_airline" src="https://github.com/user-attachments/assets/ca57c83f-3807-4b02-a6b1-2c9cc496e356" />
