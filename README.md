@@ -93,7 +93,9 @@ For reuseability of the features i engineered in the dataset, i created a view t
 
 
 
-   ```sql
+
+
+  ```sql
      SELECT 
 	   ISNULL(region,'Total') AS region,
 	   COUNT(iata_code) AS total_airline,
@@ -103,5 +105,47 @@ For reuseability of the features i engineered in the dataset, i created a view t
 	   COUNT(CASE WHEN carrier_type = 'full_service_carrier' THEN 1 END) AS n_FSC
   FROM AirlineData
   GROUP BY ROLLUP(region)
+   
 
 
+#### Query output
+
+<img width="420" height="170" alt="eda_airline" src="https://github.com/user-attachments/assets/72458b64-2dfb-430b-ba7d-a8e79b0893bb" />
+
+The query reveals the number of airlines operating in each region, including the total count, the number of active and inactive airlines, as well as a breakdown of low-cost and full-service carriers per region.
+
+
+
+```sql
+
+ -- Airline Efficiency_metrics
+
+WITH 
+air_efficiency
+AS(SELECT region,
+	   AVG(load_factor)*100 AS avg_loadfactor,
+	   AVG(passenger_yield)*100 AS avg_passenger_yield
+FROM AirlineData
+WHERE airline_status = 'operated'
+GROUP BY  region
+),
+
+---filtered out airlines running at loss
+ranking
+AS(SELECT a.region,
+	   e.avg_loadfactor,
+	   avg_passenger_yield,
+	   AVG(ebit_usd) AS revenue,
+	   DENSE_RANK() OVER(ORDER BY e.avg_loadfactor DESC,avg_passenger_yield DESC,AVG(ebit_usd) DESC) AS rank
+FROM AirlineData  a
+JOIN air_efficiency e
+ON a.region = e.region
+WHERE airline_status = 'operated' AND ebit_usd > 0
+GROUP BY  a.region,e.avg_loadfactor,avg_passenger_yield
+)
+
+SELECT *
+FROM ranking 
+WHERE rank <=3
+
+```
