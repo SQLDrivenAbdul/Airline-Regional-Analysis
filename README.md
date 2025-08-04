@@ -103,5 +103,5 @@ For reuseability of the features i engineered in the dataset, i created a view t
 	   COUNT(CASE WHEN carrier_type = 'full_service_carrier' THEN 1 END) AS n_FSC
   FROM AirlineData
   GROUP BY ROLLUP(region)
-```![Airline EDA](https://raw.githubusercontent.com/SQLDrivenAbdul/Airline-Regional-Analysis/main/ailine_eda.PNG)
+
 
