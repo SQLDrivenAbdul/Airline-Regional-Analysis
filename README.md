@@ -80,7 +80,7 @@ SELECT
 		END AS airline_status
    FROM airline_data
 ```
-For reuseability of the features i engineered in the dataset, i created a view that houses my prepared data. In the view,  i picked only columns that are important for my analysis and added new ones carrier_type and airline_status. 
+For reuseability of the features i engineered in the dataset, i created a view that houses my prepared data. In the view,  i picked only columns that are important for my analysis and added new ones(carrier_type and airline_status). 
 
 -The carrier_type classified the airlines into low-cost carriers and full-service carriers.
 
@@ -89,10 +89,8 @@ For reuseability of the features i engineered in the dataset, i created a view t
 - Airlines with with only load factor as also classified "operator" meaning they operated but the ask was not provided
 - Airlines with ask value only are classified "active" which means they have availabe seats but not patronized by passengers
 - Airlines with ebit-usd value are classified as "no_efficiency_data"  while airlines that didn't fail in any of these bins/categories are tagged 'inactive'
-- N/B: For my analysis, i focused on the airlines tagged operated only, as they are those that can't help answers of both efficiency and profit.
 
-
-
+#### Note: For this analysis, I focused exclusively on airlines tagged as "operated" only, as they are the most relevant for evaluating both efficiency and profitability
 
 
   ```sql
@@ -105,8 +103,7 @@ For reuseability of the features i engineered in the dataset, i created a view t
 	   COUNT(CASE WHEN carrier_type = 'full_service_carrier' THEN 1 END) AS n_FSC
   FROM AirlineData
   GROUP BY ROLLUP(region)
-   
-
+   ```
 
 #### Query output
 
@@ -119,8 +116,7 @@ The query reveals the number of airlines operating in each region, including the
 
 ### Thoughts of handling question
 
-Airlines without ask; which is the most primary metric to capture efficiency and also without loadfactor are exxcluded from the analysis.Also,airlines with no ask but with a loadfactor were considered with the idea that the ask value are not just provided. The analysis was very chronological- it puts the efficiency metric before moving to profit because it matters.
-
+Airlines without ASK which is the primary metric for measuring efficiency and load factor were excluded from the analysis. However, airlines that had a load factor but no ASK value were still considered, based on the assumption that the ASK data was simply unavailable.The analysis followed a logical progression: it prioritized efficiency metrics before moving on to profitability, as operational efficiency is a key foundation for understanding airline performance.
 ```sql
 
  -- Airline Efficiency_metrics
