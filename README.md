@@ -58,7 +58,7 @@ SELECT *
 FROM airline_data
 WHERE ask IS NULL
 ```
-Other data quality issues faced include airlines without ask having a loadfactor(percentage of the ask available that were occupied by passengers) and records that provided the revenue(ebit_usd) values only. These aforementioned problems led me to segmenting the airlines according thier provided features and also i also did feature engineering on low_cost_carrier column.
+Other data quality issues faced include airlines without ask having a loadfactor(percentage of the ask available that were occupied by passengers) and records that provided the revenue(ebit_usd) values only. These aforementioned problems led me to segmenting the airlines according to thier provided values and also did feature engineering on low_cost_carrier column.
 
 
 ```sql
