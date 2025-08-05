@@ -157,3 +157,21 @@ The query reveals that North,Latin America and Europe leads in efficiency and pr
 
 
 <img width="441" height="100" alt="top 3 regions" src="https://github.com/user-attachments/assets/24c9b1f1-a95f-4442-90a2-539347430878" />
+
+
+### A deep dive into the Top 3 regions
+
+```sql
+
+SELECT region,
+	   carrier_type, 
+	   COUNT(CASE WHEN airline_status = 'operated' THEN 1 END) AS actives,
+	   AVG(load_factor)*100 AS avg_loadfactor,
+	   AVG(ebit_usd) AS revenue
+FROM AirlineData 
+WHERE airline_status = 'operated' AND region IN('North America','Latin America','Europe')
+GROUP BY region,carrier_type
+ORDER BY region,avg_loadfactor DESC
+```
+
+<img width="441" height="132" alt="low vs full_service carriers" src="https://github.com/user-attachments/assets/b41d01d2-abf4-401d-80a7-fe9711f9fab2" />
