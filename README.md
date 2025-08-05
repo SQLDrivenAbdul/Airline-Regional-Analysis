@@ -58,7 +58,10 @@ SELECT *
 FROM airline_data
 WHERE ask IS NULL
 ```
-Other data quality issues faced include airlines without ask having a loadfactor(percentage of the ask available that were occupied by passengers) and records that provided the revenue(ebit_usd) values only. These aforementioned problems led me to segmenting the airlines according to thier provided values and also did feature engineering on low_cost_carrier column.
+Other data quality issues faced includes:
+ - airlines without ask value but a loadfactor(percentage of the ask available that were occupied by passengers) 
+ - airlines that provided the revenue(ebit_usd) values only.
+These aforementioned problems led me to segmenting the airlines according to thier provided values and also did feature engineering on low_cost_carrier column.
 
 
 ```sql
@@ -84,7 +87,7 @@ For reuseability of the features i engineered in the dataset, i created a view t
 
 -The carrier_type classified the airlines into low-cost carriers and full-service carriers.
 
--The airline_status classified airlines based on their values/features provided,the condition for classifying them are as follows:
+The airline_status classified airlines based on their values/features provided,the condition for classifying them are as follows:
 - Airlines with a ask and load factor value means the airline operated therefore clasified as "operated"
 - Airlines with with only load factor as also classified "operator" meaning they operated but the ask was not provided
 - Airlines with ask value only are classified "active" which means they have availabe seats but not patronized by passengers
