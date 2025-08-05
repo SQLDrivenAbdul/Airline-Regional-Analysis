@@ -151,8 +151,8 @@ WHERE rank <=3
 
 ```
 
-### Query output
+### Query output - Top 3 regions 
 
-The query reveals that North,Latin America and Europe in tthese metrics respectfully - eventhough Africa has the highest passenger yield of 0.11 the falls way lower in loadfactor.
+The query reveals that North,Latin America and Europe leads in efficiency and profit. Eventhough Africa has the highest passenger yield of 0.11 per KM, It falls way lower in loadfactor compared to other regions.
 
 <img width="449" height="123" alt="most efficient and profitable regions" src="https://github.com/user-attachments/assets/4627599c-3353-40d4-b000-54fc8878c15c" />
