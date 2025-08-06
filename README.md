@@ -168,8 +168,8 @@ The query reveals that North,Latin America and Europe leads in efficiency and pr
 
 SELECT region,
 	   carrier_type, 
-	   COUNT(CASE WHEN airline_status = 'operated' THEN 1 END) AS actives,
 	   AVG(load_factor)*100 AS avg_loadfactor,
+	    AVG(passenger_yield) AS yield,
 	   AVG(ebit_usd) AS revenue
 FROM AirlineData 
 WHERE airline_status = 'operated' AND region IN('North America','Latin America','Europe')
@@ -177,4 +177,14 @@ GROUP BY region,carrier_type
 ORDER BY region,avg_loadfactor DESC
 ```
 
-<img width="441" height="132" alt="low vs full_service carriers" src="https://github.com/user-attachments/assets/b41d01d2-abf4-401d-80a7-fe9711f9fab2" />
+<img width="461" height="185" alt="low_cost vs full_service carriers" src="https://github.com/user-attachments/assets/81dc183e-c6e2-4e3f-863a-ccf33454ff0f" />
+
+
+
+### Findings
+
+- There are 100 airlines in total out of which 71 are active and 29 are not
+- The efficient and profitable regions are North,latin America and Europe
+- Although Africa has the highest yeild (0.11 per km) but has the lowest avg_load factor
+- Among the top 3 regions, the full-service carriers are the major drivers of revenue(ebit_usd)
+  
