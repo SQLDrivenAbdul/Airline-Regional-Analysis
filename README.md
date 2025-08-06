@@ -188,8 +188,8 @@ ORDER BY region,avg_loadfactor DESC
 - Although Africa has the highest yeild (0.11 per km) but has the lowest avg_load factor
 - Among the top 3 regions, the full-service carriers are the major drivers of revenue(ebit_usd)
 
-### Recommendation
+### Recommendations
 - Complete documentation of airlines data
-- Africa should diversify their carrier_type; instead of having just full_services only
-- 
+- Africa should diversify their carrier_type; instead of having just full_services carriers only
+ 
   
