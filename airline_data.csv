@@ -1,0 +1,101 @@
+iata_code,airline_name,region,functional_currency,ebit_usd,load_factor,low_cost_carrier,airline_age,num_routes,passenger_yield,ask,avg_fleet_age,fleet_size,aircraft_utilisation
+ET,Ethiopian Airlines,Africa,ETB,1032026865,0.703,N,78,136,0.107,64498706000.00,8.8,154,
+KQ,Kenya Airways,Africa,KES,76000000,0.784,N,47,42,0.111,14804000000.00,13.5,40,
+LA,LATAM Airlines,Latin America,USD,1078165000,0.831,N,95,148,0.09,137000000000.00,11.48,333,
+AV,Avianca,Latin America,USD,618544000,0.824,N,104,147,0.083,54706000000.00,9.3,140,
+AD,Azul Brazilian Airlines,Latin America,BRL,596840322,0.804,Y,15,160,0.101,44006000000.00,7.4,183,10
+OB,Boliviana de Aviacion,Latin America,BOB,,,N,,,,,,,
+FO,Flybondi,Latin America,ARS,,,Y,,,,,,,
+G3,GOL,Latin America,BRL,655050679,0.84,Y,23,77,0.088,10732000000.00,10.7,141,11.7
+EK,Emirates,Middle East,AED,3778110389,0.795,N,39,150,0.102,171500000000.00,9.1,260,
+QR,Qatar Airways,Middle East,QAR,3256820032,0.8,N,31,160,,209617000000.00,5,265,
+SV,Saudia,Middle East,SAR,,,N,,,,,,,
+FZ,Flydubai,Middle East,AED,,0.763,Y,16,122,,40292000000.00,4.5,84,
+EY,Etihad,Middle East,AED,394000000,0.858,Y,17,150,,72500000000.00,7.9,85,
+TK,Turkish Airlines,Middle East,TKL,3959000000,0.826,N,91,364,0.091,235000000000.00,9.3,440,
+LY,El Al,Middle East,ILS,267300000,0.863,N,76,50,,25063000000.00,12,46,
+WY,Oman Air,Middle East,OMR,-258420764,0.74,N,31,46,,,7,50,
+KU,Kuwait Airways,Middle East,KWD,,0.71,N,,,,,,,
+FR,Ryanair,Europe,EUR,1592200000,0.93,Y,40,228,0.057,222000000000.00,9,537,9.1
+EI,Aer Lingus,Europe,EUR,241785000,0.81,N,30,100,0.09,31574200000.00,13,57,
+BA,British Airways,Europe,GBP,1821880000,0.836,N,50,200,0.115,167695000000.00,13,284,10.03
+IB,Iberia,Europe,EUR,,,N,,,,,,,
+AF,Air France,Europe,EUR,,,N,,,,,,,
+W6,Wizz Air,Europe,EUR,-485500000,0.878,Y,21,1057,0.047,97779087000.00,4.6,179,11.1
+SK,Scandinavian Airlines,Europe,SEK,-268050000,0.754,N,78,125,0.107,39736000000.00,8.6,134,
+LO,LOT Polish Airlines,Europe,PLN,286860000,,N,95,100,,,11,76,
+DE,Condor,Europe,EUR,,,N,,,,,,,
+BT,Air Baltic,Europe,EUR,88623000,0.767,N,29,126,0.089,8213000000.00,3.1,46,6.9
+U2,EasyJet,Europe,GBP,581000000,0.893,Y,29,1018,0.062,113334000000.00,9.3,336,
+DY,Norwegian,Europe,NOK,202120000,0.847,Y,31,300,0.068,32300000000.00,8.3,87,
+N0,Norse Atlantic Airways,Europe,USD,-135223000,0.74,Y,3,25,0.046,8672000000.00,6,10,
+KL,KLM,Europe,EUR,1257000000,0.871,N,105,300,0.102,106336000000.00,12,238,
+FB,Bulgaria Air,Europe,BGN,,,N,,,,,,,
+LM,Loganair,Europe,GBP,11671000,0.628,N,62,45,,903004000.00,20,38,
+OG,FlyPlay,Europe,USD,-20686000,0.83,Y,5,76,0.043,5415000000.00,3,10,
+KM,Air Malta,Europe,EUR,,,N,,,,,,,
+OU,Croatia Airlines,Europe,EUR,4505000,0.653,N,35,44,0.16,1991000000.00,18.15,12,8.8
+AZ,ITA Airways,Europe,EUR,,,N,,,,,,,
+TP,TAP Air Portugal,Europe,EUR,426000000,0.808,N,79,170,0.093,52797000000.00,10,98,
+LS,Jet2.com,Europe,GBP,472000000,0.905,Y,22,470,,,15,120,
+LH,Lufthansa,Europe,EUR,2710000000,0.829,N,71,400,0.105,300582000000.00,13.1,381,
+EW,Eurowings,Europe,EUR,266000000,0.841,N,31,420,0.106,32121000000.00,12,100,
+SN,Brussels Airlines,Europe,EUR,56000000,0.825,N,18,200,0.11,18118000000.00,17,44,
+LX,SWISS,Europe,CHF,880000000,0.844,N,22,220,0.13,55327000000.00,12,109,
+H4,HiSky,Europe,MDL,,,Y,,,,,,,
+AA,American Airlines,North America,USD,3069000000,0.835,N,98,1100,0.13,446951000000.00,12.9,965,
+DL,Delta Air Lines,North America,USD,5521000000,0.85,N,96,,0.131,437701000000.00,14.8,958,
+WN,Southwest Airlines,North America,USD,224000000,0.8,Y,58,700,0.108,274050000000.00,11,817,
+UA,United Airtlines,North America,USD,4211000000,0.839,N,98,920,0.125,468855000000.00,16,945,
+AC,Air Canada,North America,CAD,1720000000,0.867,N,59,,0.106,61536000000.00,11.9,243,
+B6,JetBlue,North America,USD,-230000000,0.826,N,26,,0.099,110235000000.00,12.3,300,
+Y4,Volaris,North America,USD,222710000,0.85,Y,19,231,0.058,62574000000.00,5.7,129,13.3
+F9,Frontier Airlines,North America,USD,-3000000,0.814,Y,30,271,0.071,60868260000.00,4.3,136,11.3
+VB,Viva Aerobus,North America,USD,107000000,0.867,Y,18,160,0.037,33925000000.00,5.4,81,12.6
+HA,Hawaiian Airlines,North America,USD,-293675000,0.835,N,95,,0.091,32495734000.00,12,62,
+F8,Flair,North America,CAD,,,Y,,,,,,,
+AS,Alaska Airlines,North America,USD,394000000,0.837,N,92,,0.103,110255000000.00,8.4,314,11.4
+NK,Spirit Airlines,North America,USD,-495757000,0.813,Y,41,,0.074,89565887000.00,6.6,205,11.1
+G4,Allegiant Air,North America,USD,220981000,0.859,N,27,552,0.047,30210782000.00,15.5,126,6.2
+AM,Aeromexico,North America,MXN,,,N,,,,,,,
+PD,Porter Airlines,North America,CAD,,,N,,,,,,,
+TS,Air Transat,North America,CAD,67726000,0.85,N,38,,,,11,36,
+9E,Endeavour Air,North America,USD,,,N,,,,,,,
+ZW,Air Wisconsin,North America,USD,-36871000,,N,58,,,1457629000.00,21,63,
+3M,Silver Airways,North America,USD,,,N,,,,,,,
+SY,Sun Country Airlines,North America,USD,127500000,0.863,N,42,,0.11,9726892839.00,15,42,6.9
+XP,Avelo Airlines,North America,USD,,,Y,,,,,,,
+3H,Air Inuit,North America,CAD,,,N,,,,,,,
+MO,Calm Air,North America,CAD,,,N,,,,,,,
+CZ,China Southern Airlines,Asia Pacific,CNY,782800000,0.78,N,36,,0.078,316217460000.00,9.2,908,8.9
+MU,China Eastern Airlines,Asia Pacific,CNY,270300000,0.744,N,36,,0.084,244960450000.00,8.7,800,
+CA,Air China,Asia Pacific,CNY,406971800,0.732,N,36,336,0.086,292513160000.00,9.4,905,8.14
+6E,IndiGo,Asia Pacific,INR,1216149848,0.821,Y,18,400,0.066,114359000000.00,3.5,300,16
+AK,AirAsiaX,Asia Pacific,MYR,104259000,0.8,Y,18,,0.03,15604000000.00,12.1,18,
+AI,Air India,Asia Pacific,INR,,,N,,,,,,,
+SQ,Singapore Airlines,Asia Pacific,SGD,2027200000,0.854,N,52,200,0.096,106099300000.00,6.3,188,
+VN,Vietnam Airlines,Asia Pacific,VND,-246300000,0.788,N,69,56,0.081,42200000000.00,,101,
+QF,Qantas,Asia Pacific,AUD,1827000000,0.833,N,104,,0.118,117258000000.00,,336,
+NZ,Air New Zealand,Asia Pacific,NZD,359000000,0.847,N,84,,0.112,34281000000.00,10,106,10
+PX,Air Niugini,Asia Pacific,PGK,,,N,,,,,,,
+JQ,Jetstar,Asia Pacific,AUD,,,Y,,,,,,,
+CI,China Airlines,Asia Pacific,TWD,214736800,0.789,N,65,300,0.098,48984014000.00,,84,
+KC,Air Astana,Asia Pacific,USD,129514000,0.8,N,23,50,0.114,12491000000.00,5.3,49,
+BR,EVA Air,Asia Pacific,TWD,962786980,0.831,N,35,,0.087,60905046000.00,,87,
+MH,Malaysian Airlines,Asia Pacific,MYR,,,N,,,,,,,
+VJ,VietJet,Asia Pacific,VND,7593057,0.85,Y,17,125,,,6,87,
+5J,Cebu Pacific,Asia Pacific,PHP,154889735,0.84,Y,36,104,0.051,27573157304.00,5.9,88,
+GA,Garuda Indonesia,Asia Pacific,USD,309859637,0.749,N,76,57,0.085,32820000000.00,,137,7.9
+CX,Cathay Pacific,Asia Pacific,HKD,1664200000,0.857,N,78,180,0.098,85607000000.00,11.1,181,7.7
+HU,Hainan Airlines,Asia Pacific,CNY,,,N,,,,,,,
+PR,Philippine Airlines,Asia Pacific,PHP,507044466,0.81,N,83,97,0.082,43734000000.00,9.2,78,
+TG,Thai Airways,Asia Pacific,THB,1177800000,0.823,N,64,120,0.09,54280000000.00,,70,12.2
+SG,SpiceJet,Asia Pacific,INR,-129156000,0.87,N,40,,,18251000000.00,,76,
+PK,PIA,Asia Pacific,PKR,,,N,,,,,,,
+JT,Lion Air,Asia Pacific,IDR,,,Y,,,,,,,
+OZ,Asiana Airlines,Asia Pacific,KRW,481273566,0.78,N,36,,,43119291000.00,12.1,81,
+9C,Spring Airlines,Asia Pacific,CNY,,,Y,,,,,,,
+SU,Aeroflot,Asia Pacific,RUB,2036990000,0.875,N,101,216,0.11,141000000000.00,8.9,349,
+NH,ANA,Asia Pacific,JPY,898899000,0.736,N,72,195,0.123,85776000000.00,,268,
+NQ,Air Japan,Asia Pacific,JPY,,,Y,,,,,,,
+UO,HK Express,Asia Pacific,HKD,,,Y,,,,,7.1,33,
