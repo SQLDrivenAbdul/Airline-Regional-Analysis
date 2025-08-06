@@ -184,7 +184,12 @@ ORDER BY region,avg_loadfactor DESC
 ### Findings
 
 - There are 100 airlines in total out of which 71 are active and 29 are not
-- The efficient and profitable regions are North,latin America and Europe
+- The efficient and profitable regions are North,Latin America and Europe
 - Although Africa has the highest yeild (0.11 per km) but has the lowest avg_load factor
 - Among the top 3 regions, the full-service carriers are the major drivers of revenue(ebit_usd)
+
+### Recommendation
+- Complete documentation of airlines data
+- Africa should diversify their carrier_type; instead of having just full_services only
+- 
   
